@@ -1,0 +1,77 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(17, 155, 52);
+    color: azure;
+    z-index: 1;
+    font-family: 'Gabarito', sans-serif;
+    font-size: 2vh;
+    display: flex; 
+    align-items: center;
+}
+
+.header img {
+    width: 8vh;
+    height: auto; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+}
+
+.title {
+    position: relative;
+    text-align: center; 
+    padding: 10px;
+    margin-top: 10%; 
+    margin-bottom: -10px; 
+    z-index: -1;
+}
+
+.title h2 {
+    font-family: 'Gabarito', sans-serif;
+    color: black; 
+    font-size: 6vh;
+}
+
+h2 {
+    margin: 0; 
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.content {
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    margin-top: -2vh;
+}
+
+.imageButton {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 3px;
+    font-family: 'Gabarito', sans-serif;
+    transition: background-color 0.5s ease; 
+}
+
+.imageButton:hover {
+    background-color: #123e14; 
+}
+
+.nutrition-info{
+    font-family:'Gabarito', sans-serif ;
+    font-size: 20px;
+    white-space: pre-line;
+}
+
+.default-image {
+    overflow: hidden;
+}
