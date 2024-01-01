@@ -8,19 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet">
-
+    <script defer src="code.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="header">
-        <img src="plate.png" alt="logo">
+        <div class="logo">
+            <img src="plate.png" alt="logo">
+        </div>
         <h1>EatInfo</h1>
     </div>
-
+    
     <div class="title">
+        <section class="hidden">
         <h2>Type of Nuts</h2>
+        </section>
     </div>
 
+         <div class="content">
+             <img class="utensil fork" src="fork.png" alt="fork">
+                 <img class="utensil knife" src="knife.png" alt="knife">
+            </div>
+        <section class="hidden">
     <div class="content">
         <div class="default-image">
             <img id="myImage" src="Peanut-12.png" alt="default image">
@@ -34,11 +43,14 @@
            
         </div>
     </div>
+</section>
 
     <div class="title">
+        <section class="hidden">
         <h2>Type of Fruits</h2>
+        </section>
     </div>
-
+    <section class="hidden">
     <div class="content">
         <div class="default-image">
             <img id="fruitImage" src="apple.png" alt="default fruit image">
@@ -52,10 +64,14 @@
         
         </div>
     </div>
+
+</section>
+
+
     <div class="title">
-        <h2>Type of Meat</h2>
+        <section class="hidden"><h2>Type of Meat</h2></section>
     </div>
-    
+    <section class="hidden">
     <div class="content">
         <div class="default-image">
             <img id="meatImage" src="steak.png" alt="default meat image">
@@ -68,7 +84,46 @@
           
         </div>
     </div>
+</section>
 
-    <script src="code.js"></script>
+    <div class="title">
+      <section class="hidden">  <h2>Type of Vegetables</h2> </section>
+    </div>
+    <section class="hidden">
+    <div class="content">
+        <div class="default-image">
+            <img id="vegetableImage" src="carrot.png" alt="default vegetable image">
+        </div>
+        <button id="carrot" class="imageButton">Carrot</button>
+        <button id="corn" class="imageButton">Corn</button>
+        <button id="tomato" class="imageButton">Tomato</button>
+        <button id="broccoli" class="imageButton">Broccoli</button>
+        <button id="potato" class="imageButton">Potato</button>
+    
+        <div id="vegetableNutritionInfo" class="nutrition-info">
+        
+        </div>
+    </div>
+</section>
+
+    <div class="title">
+       <section class="hidden"> <h2>Type of Grains</h2></section>
+    </div>
+    <section class="hidden">
+    <div class="content">
+        <div class="default-image">
+            <img id="grainImage" src="rice.png" alt="default grain image">
+        </div>
+        <button id="rice" class="imageButton">Rice</button>
+        <button id="wheat" class="imageButton">Wheat</button>
+        <button id="oat" class="imageButton">Oat</button>
+        <button id="barley" class="imageButton">Barley</button>
+    
+        <div id="grainNutritionInfo" class="nutrition-info">
+        
+        </div>
+    </div>  </section>
+
+
 </body>
 </html>
